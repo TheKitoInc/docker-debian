@@ -1,2 +1,2 @@
-# docker-kito-debian
-docker-kito-debian
+# docker-debian
+docker-debian
