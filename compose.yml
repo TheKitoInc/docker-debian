@@ -1,0 +1,4 @@
+services:
+  kito-debian:
+    build: .
+    image: kito-debian:latest
