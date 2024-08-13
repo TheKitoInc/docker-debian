@@ -1,4 +1,4 @@
-FROM debian:stable
+FROM debian:stable-slim
 
 # Set environment variables
 ENV ENV="/root/.bashrc"
@@ -31,3 +31,5 @@ RUN chmod +x /usr/local/bin/upgrade
 
 # Run upgrade
 RUN upgrade
+
+CMD ["bash"]
