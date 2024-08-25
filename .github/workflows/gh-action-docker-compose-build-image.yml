@@ -20,6 +20,7 @@ jobs:
       - name: Debug
         run: |
           echo "Debugging..."
+          docker-compose build
           pwd
           ls -la          
           echo "End of debugging..."
