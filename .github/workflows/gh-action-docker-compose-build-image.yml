@@ -20,6 +20,7 @@ jobs:
       - name: Debug
         run: |
           echo "Debugging..."
+          whereis docker-compose
           docker-compose build
           pwd
           ls -la          
