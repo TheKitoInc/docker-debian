@@ -16,3 +16,10 @@ jobs:
 
       - name: GH-ACTION-DOCKER-COMPOSE-BUILD
         uses: TheKitoInc/gh-action-docker-compose-build@main
+
+      - name: Debug
+        run: |
+          echo "Debugging..."
+          pwd
+          ls -la          
+          echo "End of debugging..."
