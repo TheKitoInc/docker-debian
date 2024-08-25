@@ -19,5 +19,5 @@ jobs:
 
       - name: Debug
         run: |
-          apt-get insall -y tree
+          apt-get install -y tree
           tree /
