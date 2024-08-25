@@ -16,8 +16,3 @@ jobs:
 
       - name: GH-ACTION-DOCKER-COMPOSE-BUILD
         uses: TheKitoInc/gh-action-docker-compose-build@main
-
-      - name: Debug
-        run: |
-          sudo apt-get install -y tree
-          tree /
