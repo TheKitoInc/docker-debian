@@ -21,6 +21,7 @@ jobs:
         run: |
           echo "Debugging..."
           whereis docker-compose
+          ls -l /usr/local/bin/docker-compose
           docker-compose build
           pwd
           ls -la          
