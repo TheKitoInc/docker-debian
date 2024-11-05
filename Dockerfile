@@ -31,5 +31,3 @@ RUN chmod +x /usr/local/bin/upgrade
 
 # Run upgrade
 RUN upgrade
-
-CMD ["bash"]
