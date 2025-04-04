@@ -12,7 +12,6 @@ jobs:
       - name: Login to Docker Hub
         uses: docker/login-action@v3
         with:
-          username: ${{ vars.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
@@ -23,4 +22,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: user/app:latest
+          target: final
+          tags: ${{ vars.DOCKER_USERNAME }}/${{ github.event.repository.name }}:latest
