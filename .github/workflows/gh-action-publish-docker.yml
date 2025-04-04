@@ -2,6 +2,8 @@ name: GH-ACTION-PUBLISH-DOCKER
 
 on:
   push:
+    branches:
+      - main # change this if you want a different trigger branch
 
 jobs:
   build:
