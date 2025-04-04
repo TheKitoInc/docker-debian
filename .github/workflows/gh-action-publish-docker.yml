@@ -6,7 +6,7 @@ on:
       - main # change this if you want a different trigger branch
 
 jobs:
-  build:
+  build-and-push:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
